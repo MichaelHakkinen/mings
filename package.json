@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "dev": "npm run dev --prefix mingstavern",
+    "build": "npm run build --prefix mingstavern",
+    "lint": "npm run lint --prefix mingstavern",
+    "preview": "npm run preview --prefix mingstavern"
+  },
+  "dependencies": {
+    "vite": "^8.0.12"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
+}

@@ -1,0 +1,128 @@
+.menu-section {
+  background-color: var(--bg-secondary);
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.section-title {
+  font-size: 3rem;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.section-subtitle {
+  color: var(--accent-gold);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 0.9rem;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+}
+
+.category-title {
+  font-size: 1.8rem;
+  color: var(--accent-gold);
+  border-bottom: 1px solid var(--glass-border);
+  padding-bottom: 1rem;
+  margin-bottom: 2.5rem;
+  letter-spacing: 2px;
+}
+
+.items-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.menu-item {
+  position: relative;
+  transition: var(--transition-smooth);
+}
+
+.menu-item:hover .item-name {
+  color: var(--accent-red);
+}
+
+.item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0.5rem;
+}
+
+.item-name {
+  font-size: 1.3rem;
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.item-price {
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  color: var(--accent-gold);
+  font-weight: 600;
+}
+
+.item-desc {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.4;
+  font-weight: 300;
+}
+
+.menu-cta {
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.menu-btns {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.btn-outline {
+  padding: 1rem 2.5rem;
+  border: 1px solid var(--accent-gold);
+  color: var(--accent-gold);
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.btn-outline:hover {
+  background: var(--accent-gold);
+  color: var(--bg-primary);
+}
+
+@media (max-width: 1024px) {
+  .menu-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2.5rem;
+  }
+  
+  .menu-btns {
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  
+  .btn-outline {
+    width: 100%;
+  }
+}
